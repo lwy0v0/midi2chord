@@ -1,0 +1,53 @@
+﻿# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Rust 构建缓存
+# 如果 src-tauri/target 不可写（例如沙箱环境），把 CARGO_TARGET_DIR 指到这里：
+#   $env:CARGO_TARGET_DIR='D:\data\vue\chords\.cargo-target'
+.cargo-target
+src-tauri/target
+target
+
+# Tauri 打包产物
+src-tauri/gen/schemas
+
+# 探针运行时的临时输出
+.probe-out.txt
+.probe*.txt
+p*.txt
+q*.txt
+r*.txt
+
+# 自动生成的类型声明（由 unplugin 在 build/dev 时重建）
+# 注意：首次 clone 后需要先跑一次 npm run dev 或 build 才会生成
+# auto-imports.d.ts
+# components.d.ts
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 沙箱环境遗留的空文件（本地 ACL 删不掉，已被 git rm --cached 移出索引）
+src-tauri/src/.write_probe
+src-tauri/tests/probe_scratch.rs
+
+# DSH 工具运行时数据
+.dshm/

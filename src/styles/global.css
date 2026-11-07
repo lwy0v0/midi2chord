@@ -1,0 +1,27 @@
+/* 全局基础样式：只放页面级排版，组件样式一律写在各自的 <style scoped> 里。 */
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+code {
+  font-family: "JetBrains Mono", Consolas, "Courier New", monospace;
+}
